@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav a:hover{
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+}
+section{
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+img{
+    display: block;
+    margin: 10px auto;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#home{
+    background-color: lightblue;
+    padding: 30px;
+}
+#games {
+    background-color: #d5f5e3;
+    padding: 30px;
+}
+.games-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.games-container article {
+    width: 250px;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.games-container article:hover {
+    transform: translateY(-5px);
+}
+
+.games-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#contact{
+    background-color: lightyellow;
+}
+#offers{
+    background-color: lightpink;
+}
+.price-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.price-btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
