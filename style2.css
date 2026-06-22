@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navigation Bar - Flexbox */
+nav{
+    background:#222;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section */
+.hero{
+    background:#444;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    margin-bottom:15px;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:orange;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Grid Layout */
+.games{
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* Flexbox Cards */
+.card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    box-shadow:0 0 5px gray;
+}
+
+.card img{
+    width:100%;
+    border-radius:5px;
+}
+
+.price{
+    background:green;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.btn{
+    background:#333;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* HTML5 APIs Section */
+.api-section{
+    padding:30px;
+    background:white;
+    margin:20px;
+}
+
+.drop-box{
+    width:250px;
+    height:120px;
+    border:2px dashed black;
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Modal */
+.modal{
+    width:300px;
+    margin:20px auto;
+    padding:20px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 10px gray;
+    text-align:center;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    background: black;
+    color:white;
+    padding:15px;
+    margin-top:20px;
+}
