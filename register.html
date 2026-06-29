@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width,initial scale=1.0">
+        <title>Game Store Registration</title>
+        <link rel="stylesheet" href="css files/style2.css">
+    </head>
+    <body>
+        <nav>
+            <h2>Game Store</h2>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section class="register">
+
+<h1>Create Your Account</h1>
+
+<form id="registerForm">
+
+<label>Full Name</label>
+<input type="text" id="name" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Password</label>
+<input type="password" id="password" required>
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Favourite Platform</label>
+
+<select id="platform">
+    <option>PC</option>
+    <option>PlayStation</option>
+    <option>Xbox</option>
+    <option>Nintendo</option>
+</select>
+
+<label>Profile Picture</label>
+<input type="file" id="photo">
+
+<label>Favourite Genre</label>
+
+<input type="radio" name="genre"> Action
+<input type="radio" name="genre"> RPG
+<input type="radio" name="genre"> Sports
+
+<br><br>
+
+<label>Interests</label>
+
+<input type="checkbox"> Multiplayer
+<input type="checkbox"> Story Games
+<input type="checkbox"> Esports
+
+<br><br>
+
+<button type="button" id="registerBtn">
+Register
+</button>
+
+</form>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Registration Details</h2>
+
+<div class="user-card" id="card">
+
+<p>Your registration details will appear here.</p>
+
+</div>
+
+</section>
+
+<script>
+
+const button=document.getElementById("registerBtn");
+
+button.addEventListener("click",()=>{
+
+const name=document.getElementById("name").value;
+const email=document.getElementById("email").value;
+const dob=document.getElementById("dob").value;
+const platform=document.getElementById("platform").value;
+
+document.getElementById("card").innerHTML=`
+
+<h3>${name}</h3>
+
+<p>Email : ${email}</p>
+
+<p>Date of Birth : ${dob}</p>
+
+<p>Platform : ${platform}</p>
+
+           `;
+
+       });
+
+      </script>
+    </body>
+</html>
